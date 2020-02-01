@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContainerComponent from './components/ContainerComponent';
+import FunctionComponent from './components/FunctionComponent';
 
-ReactDOM.render(<ContainerComponent />, document.getElementById('app'));
+ReactDOM.render(
+    <FunctionComponent />, 
+    document.getElementById('app')
+);
