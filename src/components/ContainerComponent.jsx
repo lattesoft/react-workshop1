@@ -30,11 +30,16 @@ import InputComponent from './InputComponent';
 
 
 const  ContainerComponent = () => {
-    
+    const [firstName,setFirstName] = useState("");
     return (
         <div>
-            <InputComponent inputHandler={this.inputHandler.bind(this)}/>  
-            <ViewComponent title="Hello" text={this.state}/>
+            <input type="text" onChange={(e)=>{
+                setFirstName(e.target.value);
+            }}/>
+            <br/>
+            {firstName}
+            {/* <InputComponent inputHandler={this.inputHandler.bind(this)}/>  
+            <ViewComponent title="Hello" text={this.state}/> */}
         </div> 
     )
 }
